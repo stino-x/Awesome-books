@@ -1,9 +1,9 @@
 class BookList {
   constructor(formSelector, titleSelector, authorSelector, displaySelector) {
-    this.form = document.querySelector('#input-form');
-    this.titleInput = document.querySelector('#Title');
-    this.authorInput = document.querySelector('#Author');
-    this.bookList = document.querySelector('#display-area');
+    this.form = document.querySelector(formSelector);
+    this.titleInput = document.querySelector(titleSelector);
+    this.authorInput = document.querySelector(authorSelector);
+    this.bookList = document.querySelector(displaySelector);
     this.myBooks = [];
     this.initialize();
   }
@@ -56,5 +56,5 @@ class BookList {
   }
 }
 
-const Booklist = new BookList('#input-form', '#Title', '#Author', '#display-area');
-Booklist('#input-form', '#Title', '#Author', '#display-area');
+const myBookList = new BookList('#input-form', '#Title', '#Author', '#display-area');
+myBookList();

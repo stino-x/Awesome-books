@@ -34,3 +34,9 @@ form {
   padding-bottom: 3%;
   border-bottom: 1px solid rgb(114, 107, 107);
 }
+
+li {
+  margin-bottom: 10%;
+  margin-left: 2%;
+  list-style: none;
+}

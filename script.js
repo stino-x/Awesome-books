@@ -29,7 +29,7 @@ if (myBooks.length > 0) {
   displayBooks(myBooks);
 }
 
-// Add book to list
+// Add book to List
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const title = titleInput.value;

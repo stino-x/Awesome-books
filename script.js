@@ -16,7 +16,7 @@ function displayBooks(books) {
   books.forEach((book, index) => {
     const li = document.createElement('li');
     li.innerHTML = `<div>${book.title}</div>
-    <div>${book.title}</div>
+    <div>${book.author}</div>
      <input type="submit" id="#button" value="Remove Book" class="remove">`;
     li.dataset.index = index;
     bookList.appendChild(li);

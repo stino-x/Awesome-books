@@ -70,3 +70,9 @@ li:nth-child(odd) {
   display: flex;
   justify-content: space-evenly;
 }
+
+span.border {
+  width: 4rem;
+  margin-top: 0.8rem;
+  border-bottom: 2px solid black;
+}

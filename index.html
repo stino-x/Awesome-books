@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Awesome Books</h1>
+      <ul id="display-area"></ul>
+      <form action="submit" id="input-form" class="form-border">
+        <span class="border"></span>
+        <h3>add a new book</h3>
+        <input
+          type="text"
+          class="input-area border"
+          name="Title"
+          id="Title"
+          placeholder="Title"
+        />
+        <input
+          type="text"
+          class="input-area border"
+          name="Author"
+          id="Author"
+          placeholder="Author"
+        />
+        <input type="submit" id="#button" value="Add Book" />
+      </form>
+    </div>
     <script src="script.js" refer></script>
-</head>
-<body>
-    <h1>Awesome Books</h1>
-    <div class="display-area"></div>
-   <form action="" id="input-form" class="form-border">
-    <input type="text" class="input-area border" name="Title" id="Title" placeholder="Title">
-    <input type="text" class="input-area border" name="Author" id="Author" placeholder="Author">
-    <input type="submit" id="#button" value="Add Book">
-   </form> 
-</body>
+  </body>
 </html>

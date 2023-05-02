@@ -34,7 +34,8 @@ class BookList {
     // Add event listener for removing book from list
     this.bookList.addEventListener('click', (e) => {
       if (e.target.classList.contains('remove')) {
-        const bookIndex = e.target.parentElement.dataset.index;
+        const li = e.target.closest('li');
+        const bookIndex = li.dataset.index;
         this.myBooks.splice(bookIndex, 1);
         localStorage.setItem('books', JSON.stringify(this.myBooks));
         this.displayBooks(this.myBooks);
@@ -46,9 +47,9 @@ class BookList {
     this.bookList.innerHTML = '';
     books.forEach((book, index) => {
       const li = document.createElement('li');
-      li.innerHTML = `<div>${book.title}</div>
-      <div>${book.author}</div>
-      <input type="submit" id="#button" value="Remove Book" class="remove">`;
+      li.innerHTML = `<div class="container">
+      <div class="right-part"> <span>${book.title}</span>  <span> by </span> <span>${book.author}</span></div>
+      <input type="submit" id="#button" value="Remove Book" class="remove"> </div>`;
       li.dataset.index = index;
       this.bookList.appendChild(li);
       li.setAttribute('class', 'form-border');

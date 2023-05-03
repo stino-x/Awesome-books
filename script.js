@@ -61,6 +61,7 @@ const myBookList = new BookList('#input-form', '#Title', '#Author', '#display-ar
 
 
 // Nabigation 
+
 const datetime = document.getElementById("datetime");
 
 setInterval(() => {
@@ -70,3 +71,42 @@ setInterval(() => {
   const time = now.toLocaleTimeString();
   datetime.innerHTML = `${date} ${time}`;
 }, 1000);
+
+let navList = document.getElementById('navList')
+let navAdd = document.getElementById('navAdd')
+let navContact = document.getElementById('navContact')
+let listHeader = document.getElementById('list')
+let addNewHeader = document.getElementById('add_new')
+let contactHeader = document.getElementById('contact')
+let bookList = document.getElementById('display-area')
+let Addbook = document.getElementById('input-form')
+let contact = document.getElementById('contact_sec')
+
+navList.addEventListener('click',()=> {
+  listHeader.style.display ='inline'
+  bookList.style.display = 'inline'
+  addNewHeader.style.display ='none'
+  Addbook.style.display ='none';
+  contactHeader.style.display ='none'
+  contact.style.display ='none'
+})
+
+navAdd.addEventListener('click',()=>{
+  listHeader.style.display ='none'
+  bookList.style.display = 'none'
+  addNewHeader.style.display ='inline'
+  Addbook.style.display ='flex';
+  contactHeader.style.display ='none'
+  contact.style.display ='none'
+})
+
+navContact.addEventListener('click',()=>{
+  listHeader.style.display ='none'
+  bookList.style.display = 'none'
+  contactHeader.style.display ='inline'
+  contact.style.display= 'inline'
+  addNewHeader.style.display ='none'
+  Addbook.style.display ='none';
+})
+
+

@@ -1,7 +1,4 @@
-
-
 const datetime = document.getElementById('datetime');
-
 setInterval(() => {
   const now = new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };

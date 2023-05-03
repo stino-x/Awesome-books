@@ -6,18 +6,67 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+}
+
+.navbar {
+  border: 2px solid black;
+  width: 96%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+h1 {
+  padding-left: 3rem;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar_menu_item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar_menu_item:nth-child(odd) {
+  background-color: white;
+  list-style-type: none;
+}
+
+#datetime {
+  height: 2rem;
+  width: 20%;
+  color: black;
+  float: right;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-right: 0.9rem;
+}
+
 .main {
-  width: 30vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  border: 0.5px solid gray;
+  margin: 4rem auto;
 }
 
 form {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   justify-content: center;
@@ -26,8 +75,9 @@ form {
   padding: 0.5rem;
 }
 
-h1 {
-  margin-bottom: 0.6rem;
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 h3 {
@@ -36,20 +86,34 @@ h3 {
 
 .input-area {
   margin-bottom: 1%;
-  width: 200px;
+  width: 600px;
+  height: 2rem;
+  padding: 1.3rem;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #button {
-  width: 10%;
+  width: 15%;
+  padding: 0.6rem 0;
+}
+
+#button:hover {
+  background-color: black;
+  color: white;
 }
 
 #display-area {
   border: 2px solid black;
   width: 100%;
+  padding: 0.8rem;
 }
 
 li {
   list-style-type: none;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 li:nth-child(odd) {
@@ -58,11 +122,16 @@ li:nth-child(odd) {
   list-style-type: none;
 }
 
-.container {
+.remove {
   padding: 0.3rem;
+}
+
+.container {
+  padding: 0.7rem;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 
 .right-part {
@@ -75,4 +144,54 @@ span.border {
   width: 4rem;
   margin-top: 0.8rem;
   border-bottom: 2px solid black;
+}
+
+#list {
+  display: inline;
+}
+
+#add_new {
+  display: none;
+}
+
+#contact_sec {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+div.contact {
+  width: 85%;
+  display: none;
+}
+
+.contact_bio {
+  font-size: 2rem;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.contact_list_item {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  list-style-type: disc;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+
+.contact_list_item:nth-child(odd) {
+  background-color: white;
+  list-style-type: disc;
+}
+
+footer {
+  width: 96%;
+  border: 2px solid black;
+  margin: 0 auto;
+  padding: 1rem;
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
 }

@@ -113,6 +113,7 @@ li {
   list-style-type: none;
   margin-bottom: 2px;
   border-radius: 4px;
+  font-weight: bold;
 }
 
 li:nth-child(odd) {
@@ -122,6 +123,7 @@ li:nth-child(odd) {
 }
 
 .remove {
+  padding: 0.3rem;
 }
 
 .container {
